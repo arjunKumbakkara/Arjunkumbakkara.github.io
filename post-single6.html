@@ -1,3 +1,23 @@
+<style>
+.medium-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150%; /* Adjust this value to control height */
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.medium-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+</style>
 <div id="blog-header" style="background: url(images/blog/midium/1.jpg); background-size: cover;">
     <div class="overlay"></div>
     <div class="single-post-title">
@@ -19,11 +39,19 @@
                     <div class="post-body">
                         <p>Continuous Machine Learning on Huggingface Transformer with DVC including Weights & Biases implementation and Converting weights to ONNX.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>-->
                         <blockquote>
-                            A blockquote example goes here.Sed convallis consectetur sem, id hendrerit massa posuere nec.
+                            Main idea of this project is to explain how CML can be implemented in an NLP Project therefore main focus of this Project is to explain how CML can be implemented. We assume that user is well verse in 🤗 Transformers , DVC, ONNX & Weights&Biases (Wandb) Implementations.
                         </blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>
+
+                        <div class="medium-container">
+                            <iframe 
+                              src="https://medium.com/@arjunkumbakkara/continuous-machine-learning-on-huggingface-transformer-with-dvc-including-weights-biases-1bc4520d210" 
+                              allowfullscreen 
+                              frameborder="0">
+                            </iframe>
+                          </div>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</p>-->
                     </div>
                     <div class="author-box row">
                         <div class="col-sm-2">
@@ -136,4 +164,6 @@ $('#close-post').on('click', function() {
     $('.inline-menu-container').addClass('showx');
     $('.content-blocks.pop section').empty();
 });
+
+
 </script>
